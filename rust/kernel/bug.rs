@@ -108,7 +108,7 @@ macro_rules! warn_flags {
 
 #[doc(hidden)]
 pub const fn bugflag_taint(value: u32) -> u32 {
-    value << 8
+    value << 16
 }
 
 /// Report a warning if `cond` is true and return the condition's evaluation result.
